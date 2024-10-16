@@ -12,17 +12,14 @@ class Person {
   String name;
   int age;
 
-  // Constructor de la clase Person
   Person(this.name, this.age);
 }
 
 class Employee extends Person {
   String cargo;
 
-  // Constructor nombrado 'cargo' para Employee
   Employee.cargo(String name, int age, this.cargo) : super(name, age);
 
-  // Sobrescribir el método para mostrar detalles
   String Cargo() {
     return "This employee is called $name, they are $age years old, and their position is $cargo.";
   }
